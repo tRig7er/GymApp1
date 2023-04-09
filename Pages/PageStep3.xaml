@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Pages.PageStep3"
+             Title="PageStep3" Shell.NavBarIsVisible="False" BackgroundColor="#6e9cd2" HeightRequest="700" WidthRequest="400">
+    <VerticalStackLayout>
+        <Label Text="Step 3/5" Style="{StaticResource txtStyle}" Margin="0,100,0,0"/>
+        <Label Text="What do you want to work on?" Style="{StaticResource txtStyle2}" Margin="0,30"/>
+        <Image Source="male_image.png" WidthRequest="270" Margin="400,10,0,0" x:Name="ImageMale"/>
+        <Image Source="female_image.png" WidthRequest="220" Margin="370,10,0,0" x:Name="ImageFemale"/>
+        <StackLayout HorizontalOptions="Start" Margin="15,-360,0,0">
+            <HorizontalStackLayout>
+                <Button Text="Hands" x:Name="btnHands" Style="{StaticResource btnStyle2}" Clicked="ButtonHands_Clicked"/>
+                <Line WidthRequest="140" HeightRequest="1" BackgroundColor="White"/>
+                <Ellipse Fill="White"
+                   Stroke="#6e9cd2"
+                   StrokeThickness="4"
+                   WidthRequest="20"
+                   HeightRequest="20"
+                   HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button Text="Spine" x:Name="btnSpine" Style="{StaticResource btnStyle2}" Clicked="ButtonSpine_Clicked"/>
+                <Line WidthRequest="165" HeightRequest="1" BackgroundColor="White"/>
+                <Ellipse Fill="White"
+                   Stroke="#6e9cd2"
+                   StrokeThickness="4"
+                   WidthRequest="20"
+                   HeightRequest="20"
+                   HorizontalOptions="Start"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button Text="Torso" x:Name="btnTorso" Style="{StaticResource btnStyle2}" Clicked="ButtonTorso_Clicked"/>
+                <Line WidthRequest="180" HeightRequest="1" BackgroundColor="White"/>
+                <VerticalStackLayout VerticalOptions="Center" Margin="-10,-30,0,0">
+                    <Ellipse Fill="White"
+                   Stroke="#6e9cd2"
+                   StrokeThickness="4"
+                   WidthRequest="20"
+                   HeightRequest="20"/>
+                    <Line WidthRequest="1" HeightRequest="10" BackgroundColor="White"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button Text="Legs" x:Name="btnLegs" Style="{StaticResource btnStyle2}" Clicked="ButtonLegs_Clicked"/>
+                <Line WidthRequest="138" HeightRequest="1" BackgroundColor="White"/>
+                <Ellipse Fill="White"
+                   Stroke="#6e9cd2"
+                   StrokeThickness="4"
+                   WidthRequest="20"
+                   HeightRequest="20"/>
+            </HorizontalStackLayout>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
